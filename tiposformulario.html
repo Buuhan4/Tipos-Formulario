@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+        .azul {
+            background-color: lightblue;
+        }
+
+        .sangria {
+            margin-left: 20px;
+        }
+
+        .matematicas {
+            margin-left: 20px;
+        }
+
+        .algoritmia {
+            margin-left: 31px;
+        }
+
+        .sistemasrobotica {
+            margin-left: 45px;
+        }
+        .botellas{
+            width: 200px; 
+            border: 2px solid black;
+        }
+        .lenguajes{
+            width: 250px;
+        }
+        .bajo{
+            margin-left: 45px;
+        }
+        .medio{
+            margin-left: 33px; 
+        }
+        .alto{
+            margin-left: 46px;
+        }
+        .js{
+            margin-left: 46px; 
+        }
+        .php{
+            margin-left: 84px;
+        }
+        .node{
+            margin-left: 63px;
+        }
+        .phyton{
+            margin-left: 67px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+        <form action="#" method="post">
+            <label for="usuario">Usuario</label>
+            <br>
+            <input class="azul" type="text" id="usuario" name="usuario" value="a1tof" required>
+            <br>
+            <label for="password">Contraseña</label>
+            <br>
+            <input type="password" class="azul" id="password" name="password" value="********" required>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <br>
+    <div class="form-container">
+        <form action="#" method="post">
+            <label for="nombre-viajero">Usuario</label><br>
+            <input type="text" id="nombre-viajero" name="nombre-viajero" placeholder="Nombre del viajero" required>
+            <br>
+            <label for="tipo-pasaje">Tipo de pasaje</label>
+            <select id="tipo-pasaje" name="tipo-pasaje">
+                <option value="0">Vip</option>
+                <option value="1">Especial</option>
+                <option value="2">Primera</option>
+                <option value="3">Segunda</option>
+            </select>
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <br>
+    <div class="form-container">
+        <form action="#" method="post">
+            <label for="articulo">Artículo</label>
+            <input type="text" id="articulo" name="articulo" placeholder="Artículo" required><br><br>
+
+            <label>Forma de entrega:</label><br><br>
+            <input class="sangria" type="radio" id="domicilio" name="entrega" value="domicilio">
+            <label for="domicilio">Envío a domicilio</label><br>
+            <input class="sangria" type="radio" id="tienda" name="entrega" checked value="tienda">
+            <label for="tienda">Recogida en tienda</label><br> 
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <br>
+    <div class="form-container">
+        <form action="#" method="post">
+            <label for="matricula">Número de matrícula</label>
+            <input type="text" id="matricula" name="matricula" placeholder="Matrícula" required pattern="M[0-9]{3}">
+            <br><br>
+            <label>Materias</label><br><br>
+            <label for="matematicas">Matemáticas</label>
+            <input type="checkbox" class="matematicas" id="matematicas" name="materias" value="matematicas"><br><br>
+            <label for="algoritmia">Algoritmia</label>
+            <input type="checkbox" class="algoritmia" id="algoritmia" name="materias" value="algoritmia"
+                checked><br><br>
+            <label for="sistemas">Sistemas</label>
+            <input type="checkbox" class="sistemasrobotica" id="sistemas" name="materias" value="sistemas"><br><br>
+            <label for="robotica">Robótica</label>
+            <input type="checkbox" class="sistemasrobotica" id="robotica" name="materias" value="robotica"
+                checked><br><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <br>
+    <br>
+    <form action="#" method="post">
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="nombre" required><br><br>
+
+        <label for="email">E-mail</label><br>
+        <input type="email" id="email" name="email" placeholder="mail válido" required><br><br>
+
+        <label for="mensaje">Escriba su mensaje</label><br>
+        <textarea id="mensaje" name="mensaje" cols="40" rows="10" required></textarea><br><br>
+
+        <input type="hidden" name="pagina" value="página de contacto">
+
+        <input type="submit" value="Enviar"><br><br>
+    </form>
+    <form action="#" method="post">
+        <label for="nombre-hotel">Nombre</label><br>
+        <input type="text" id="nombre-hotel" name="nombre-hotel" placeholder="nombre" required><br><br>
+
+        <label for="email-hotel">E-mail</label><br>
+        <input type="email" aria-placeholder="personas" id="email-hotel" name="email-hotel" required><br><br>
+
+        <label for="personas">Personas</label><br>
+        <input type="number" id="personas" name="personas" required><br><br>
+
+        <label for="fecha-llegada">Fecha de llegada</label><br>
+        <input type="date" id="fecha-llegada" name="fecha-llegada" required><br><br>
+
+        <label for="fecha-salida">Fecha de salida</label><br>
+        <input type="date" id="fecha-salida" name="fecha-salida" required><br><br>
+
+        <input type="submit" value="Enviar"><br><br>
+    </form>
+    <form action="#" method="post">
+        <label for="alias">Alias</label><br>
+        <input type="text" id="alias" name="alias" placeholder="alias" required><br><br>
+
+        <label for="email-registro">E-mail</label><br>
+        <input type="email" id="email-registro" name="email-registro" placeholder="e-mail" required><br><br>
+
+        <label for="telefono">Teléfono</label><br>
+        <input type="tel" id="telefono" name="telefono" placeholder="teléfono" required><br>
+
+        <input type="hidden" name="tipo-usuario" value="usuario-nuevo">
+
+        <input type="submit" value="Enviar"><br><br>
+    </form>
+    <form action="#" method="get">
+        <label for="fruta">Fruta </label>
+        <select id="fruta" name="fruta">
+            <option value="manzanas">Manzanas</option>
+            <option value="naranjas">Naranjas</option>
+            <option value="mandarinas">Mandarinas</option>
+        </select><br><br>
+
+        <label for="cantidad">Cantidad</label><br>
+        <input type="text" id="cantidad" name="cantidad" placeholder="número y unidad" pattern="^\d+ (ud|kg|gr)$"
+            required><br><br>
+
+        <input type="submit" value="Enviar"><br><br>
+    </form>
+    <br>
+    <form action="/compra" method="get">
+        <label for="botellas">Número de botellas (en lotes de 3):</label><br>
+        <select class="botellas" name="botellas" id="botellas">
+            <option value="3">3</option>
+            <option value="6">6</option>
+            <option value="9">9</option>
+            <option value="12">12</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <form action="/registro" method="post">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" placeholder="nombre" name="nombre" required><br><br>
+    
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="mail" required><br><br>
+    
+        <label for="telefono">Teléfono</label>
+        <input type="tel" id="telefono" placeholder="su teléfono" name="telefono"><br><br>
+    
+        <fieldset class="lenguajes">
+            <legend>Lenguajes que conoce</legend>
+            <label for="javascript">JavaScript</label>
+            <input type="checkbox" id="javascript" class="js" name="lenguajes" value="javascript" checked><br>
+            <label for="php">PHP</label>
+            <input type="checkbox" class="php" id="php" name="lenguajes" value="php"><br>
+            <label for="nodejs">NodeJS</label>
+            <input type="checkbox" class="node" id="nodejs" name="lenguajes" value="nodejs"><br>
+            <label for="python">Python</label>
+            <input type="checkbox" id="python" class="phyton" name="lenguajes" value="python"><br>
+        </fieldset>
+        <br>
+    
+        <label for="nivel">Nivel de Inglés</label><br><br>
+        <label for="bajo">Bajo</label>
+        <input type="radio" checked class="bajo" id="bajo" name="ingles" value="bajo" required><br>
+        <label for="medio">Medio</label>
+        <input type="radio" class="medio" id="medio" name="ingles" value="medio"><br>
+        <label for="alto">Alto</label>
+        <input type="radio" class="alto" id="alto" name="ingles" value="alto"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    
+</body>
+
+</html>
